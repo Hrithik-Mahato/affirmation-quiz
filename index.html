@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0ff">
+  <meta name="description" content="A calm, offline-friendly daily affirmation practice quiz.">
+  <title>Daily Affirmations</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">✦</div>
+      <div>
+        <p class="eyebrow">A MOMENT FOR YOU</p>
+        <h1>Daily affirmations</h1>
+      </div>
+      <button id="installButton" class="icon-button hidden" type="button" aria-label="Install app">＋</button>
+    </header>
+
+    <section class="welcome-card">
+      <p class="eyebrow">TODAY IS A NEW BEGINNING</p>
+      <h2>Take a breath.<br><span>Trust your growth.</span></h2>
+      <p>Practice the words you want to carry with you.</p>
+      <div class="welcome-decoration" aria-hidden="true">☼</div>
+    </section>
+
+    <section class="progress-panel" aria-label="Your progress">
+      <div class="progress-heading">
+        <div>
+          <p class="eyebrow">YOUR PRACTICE</p>
+          <h2>Small steps count</h2>
+        </div>
+        <span id="progressCount" class="progress-count">0 / 5</span>
+      </div>
+      <div class="progress-track" role="progressbar" aria-label="Questions completed" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" id="progressBar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+      <div class="stats-row">
+        <div><strong id="streakValue">0</strong><span>day streak</span></div>
+        <div><strong id="sessionScore">0</strong><span>correct today</span></div>
+        <div><strong id="totalSessions">0</strong><span>practice days</span></div>
+      </div>
+    </section>
+
+    <section class="quiz-card" aria-labelledby="questionTitle">
+      <div class="quiz-topline">
+        <span id="questionType" class="type-pill">MULTIPLE CHOICE</span>
+        <span id="questionNumber" class="question-number">QUESTION 1 OF 5</span>
+      </div>
+      <h2 id="questionTitle">Loading your first affirmation…</h2>
+      <p id="questionPrompt" class="question-prompt">Choose the words that feel right.</p>
+      <form id="answerForm">
+        <div id="answerArea" class="answer-area"></div>
+        <div id="feedback" class="feedback hidden" role="status" aria-live="polite"></div>
+        <div class="quiz-actions">
+          <button id="checkButton" class="primary-button" type="submit">Check answer</button>
+          <button id="nextButton" class="secondary-button hidden" type="button">Next question <span aria-hidden="true">→</span></button>
+        </div>
+      </form>
+      <p class="gentle-reminder">There is no need to be perfect. Just keep showing up.</p>
+    </section>
+
+    <section id="completeCard" class="complete-card hidden" aria-live="polite">
+      <div class="complete-icon" aria-hidden="true">✿</div>
+      <p class="eyebrow">PRACTICE COMPLETE</p>
+      <h2>You showed up for yourself.</h2>
+      <p id="completionMessage">Every small moment of practice matters.</p>
+      <button id="restartButton" class="primary-button" type="button">Practice again</button>
+    </section>
+
+    <footer>
+      <p>Your progress stays on this device. This app works offline after its first successful load and cache.</p>
+      <button id="resetButton" class="text-button" type="button">Reset today's progress</button>
+    </footer>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
