@@ -1,7 +1,7 @@
 :root {
   color-scheme: light;
   --ink: #29283d;
-  --muted: #77758c;
+  --muted: #02010f;
   --lavender: #eee8ff;
   --lavender-deep: #7865bd;
   --green: #dcefe2;
@@ -47,7 +47,7 @@ h1 { margin-bottom: 0; font-size: clamp(1.25rem, 4vw, 1.65rem); letter-spacing: 
 .quiz-topline { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 9px; margin-bottom: 20px; }
 .type-pill { padding: 7px 10px; border-radius: 99px; background: #f0ebff; color: #6c59ad; font-size: .66rem; font-weight: 800; letter-spacing: .08em; }
 .question-number { color: var(--muted); font-size: .7rem; font-weight: 700; letter-spacing: .08em; }
-.quiz-card h2 { margin-bottom: 8px; font-size: clamp(1.3rem, 5vw, 1.8rem); line-height: 1.25; letter-spacing: -.04em; }
+.quiz-card h2 { margin-bottom: 10px; font-size: clamp(1.3rem, 5vw, 1.8rem); line-height: 1.25; letter-spacing: -.04em; }
 .question-prompt { margin-bottom: 22px; color: var(--muted); line-height: 1.5; }
 .answer-area { display: grid; gap: 10px; }
 .answer-option { display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 15px; border: 1px solid var(--line); border-radius: 15px; background: #fff; color: var(--ink); text-align: left; line-height: 1.4; transition: border-color .15s, background .15s; }

@@ -3,51 +3,70 @@ const QUESTIONS = [
   {
     id: "q1",
     type: "mcq",
-    prompt: "Choose the affirmation that reminds you that growth takes practice.",
-    affirmation: "I am capable of learning new things.",
+    prompt: "When planning your day to prevent overwhelm, what is your approach?",
+    affirmation: "Screw the whole life plan. What am I planing what I doing in the next 30 minutes.",
     options: [
       "I must know everything already.",
-      "I am capable of learning new things.",
-      "I should never make mistakes.",
-      "I can only grow when life is easy."
+      "Try to plan out every detail of the next five years",
+      "Screw the whole life plan. What am I planing what I doing in the next 30 minutes.",
+      "Wait for inspiration to strike before doing anything."
     ]
   },
   {
     id: "q2",
     type: "typed",
-    prompt: "Type this affirmation from memory. Capitalization and extra spaces do not matter.",
-    affirmation: "I trust myself to take the next step.",
+    prompt: "How do you respond when you feel an unhelpful craving or urge? Type this affirmation:Yeah, the urge hits hard, but I hit back harder. I am in control.",
+    affirmation: "Yeah, the urge hits hard, but I hit back harder. I am in control.",
     options: []
   },
   {
     id: "q3",
     type: "mcq",
-    prompt: "Choose the affirmation that encourages patience with yourself.",
-    affirmation: "I give myself time and space to grow.",
+    prompt: "How do you treat mealtime and cooking?",
+    affirmation: "Practice mindful eating and give full attention to my meals",
     options: [
-      "I must improve immediately.",
-      "I should compare every step with someone else.",
+      "Watch TV or anime while eating to save time.",
+      "Scroll through social media while eating.",
       "I give myself time and space to grow.",
-      "My mistakes define my worth."
+      "Practice mindful eating and give full attention to my meals"
     ]
   },
   {
     id: "q4",
     type: "typed",
-    prompt: "Type this affirmation exactly, apart from capitalization or extra spaces.",
-    affirmation: "I deserve rest as well as achievement.",
+    prompt: "What is your absolute rule when it comes to porn and toxic distractions? Type this affirmation:I don’t touch that garbage. I keep my mind clean.",
+    affirmation: "I don’t touch that garbage. I keep my mind clean.",
     options: []
   },
   {
     id: "q5",
     type: "mcq",
-    prompt: "Choose the affirmation that helps you begin even when something feels difficult.",
-    affirmation: "I can begin with one small step.",
+    prompt: "Where does your time and primary focus go each day?",
+    affirmation: "My time goes to my grind, period. No time wasted",
     options: [
-      "If it feels hard, I must stop.",
-      "I can begin with one small step.",
+      "My time goes to my grind, period. No time wasted",
+      "Split equally between distractions and work",
       "I need to have every answer before I start.",
-      "Only perfect progress counts."
+      "Whenever I feel like it."
+    ]
+  },
+  {
+    id: "q6",
+    type: "typed",
+    prompt: "What is you reward sytem, when youu acheive something? Type this affirmation:I use boredom strictly as an earned reward.",
+    affirmation: "I use boredom strictly as an earned reward.",
+    options: []
+  },
+  {
+    id: "q7",
+    type: "mcq",
+    prompt: "When things get chaotic, what is your mindset shift?",
+    affirmation: "Stop stressing about what I can't control. Fix what I can",
+    options: [
+      "Give up and let the chaos take over",
+      "Split equally between distractions and work",
+      "I need to have every answer before I start.",
+      "Stop stressing about what I can't control. Fix what I can"
     ]
   }
 ];
